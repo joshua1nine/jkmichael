@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import Header from '../components/Header';
 import Page from '../components/Page';
 import Card from '../components/Card';
-import { Terminal } from '../components/Terminal';
 
 const Home = () => {
 	return (
@@ -11,25 +10,18 @@ const Home = () => {
 			<Header />
 			<div className='container p-4 min-h-screen'>
 				<main>
-					<section>
+					<img
+						src='webguy-logo.svg'
+						className='absolute opacity-5 top-0 -right-1/3'
+					/>
+					<section className=''>
 						<h3 className='text-orange text-xl'>Hello, my name is</h3>
 						<h2 className='text-5xl font-bold'>Joshua Michael</h2>
-						<p className='leading-8 py-2'>
-							I am a{' '}
-							<span className='relative h-5 p-0'>
-								<span className='py-[2px] px-1 rounded-sm bg-orange mx-[2px]'>
-									full stack
-								</span>
-							</span>{' '}
-							developer. I{' '}
-							<span className='py-[2px] px-1 rounded-sm bg-orange mx-[2px]'>
-								design
-							</span>{' '}
-							and develop intuitive user experiences for the{' '}
-							<span className='py-[2px] px-1 rounded-sm bg-orange mx-[2px]'>
-								web
-							</span>
-							.
+						<p className='py-2'>
+							I am a <span className='text-orange'>full stack</span> developer.
+							I <span className='text-orange'>design</span> and develop
+							intuitive user experiences for the{' '}
+							<span className='text-orange'>web</span>.
 						</p>
 						<a href='#work'>Check out my work</a>
 					</section>
@@ -90,16 +82,27 @@ const Home = () => {
 								dui posuere blandit. Vivamus suscipit tortor eget felis
 								porttitor volutpat. Donec rutrum congue leo eget malesuada.'
 								tech={[
-									{ icon: 'figma_logo.svg', title: 'Figma' },
-									{ icon: 'react_logo.svg', title: 'React.js' },
-									{ icon: 'next_logo.svg', title: 'Next.js' },
-									{ icon: 'vercel_logo.svg', title: 'Vercel' },
+									{ icon: '/icons/figma_logo.svg', title: 'Figma' },
+									{ icon: '/icons/react_logo.svg', title: 'React.js' },
+									{ icon: '/icons/next_logo.svg', title: 'Next.js' },
+									{ icon: '/icons/vercel_logo.svg', title: 'Vercel' },
 								]}
 							/>
 						</div>
 					</section>
 					<section>
 						<h2>Contact</h2>
+						<div className='flex items-center' id='email'>
+							<FaEnvelope className='text-green' size={50} />{' '}
+							joshua.kale.michael@gmail.com
+						</div>
+						<div className='flex items-center' id='github'>
+							<FaGithub className='text-[#F5F5F5]' size={40} /> @joshua1nine
+						</div>
+						<div className='flex items-center' id='linkedin'>
+							<FaLinkedin className='text-[#0077B5]' size={40} /> /in/jkmichael
+						</div>
+						<a href='#'>What a resume?</a>
 					</section>
 				</main>
 			</div>
