@@ -3,7 +3,7 @@ import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Header = () => {
 	return (
-		<header className='flex items-center justify-between p-3'>
+		<header className='flex items-center justify-between p-3 xl:p-6'>
 			<img src='/jkm_logo.svg' alt='JKM Logo' />
 			<div className='flex space-x-6'>
 				<Link href='mailto:joshua.kale.michael@gmail.com'>

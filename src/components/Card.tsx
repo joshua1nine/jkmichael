@@ -7,24 +7,41 @@ type Props = {
 	description: string;
 	tech: { icon: any; title?: string }[];
 	link: string;
+	roles?: any[];
 };
 
-const Page = ({ image, title, description, tech, link = '' }: Props) => {
+const Page = ({ image, title, description, tech, link = '', roles }: Props) => {
+	console.log(roles[0]);
 	return (
-		<article className='bg-gray-400 rounded-md'>
+		<article className='bg-gray-400 rounded-md max-w-[375px]'>
 			<Image width={375} height={220} src={image} className='rounded-t-md' />
 			<div className='flex flex-col h-[275px]'>
 				<div className='flex-1 p-4 pt-2'>
 					<Link href={link}>
 						<a target='_blank'>
-							<h4 className='text-2xl font-bold mb-4 hover:text-green'>
+							<h4 className='text-2xl font-bold mb-1 hover:text-green'>
 								{title}
 							</h4>
 						</a>
 					</Link>
+					<div className='mb-3'>
+						{roles.map((role, index) => {
+							return (
+								<span
+									key={index}
+									className={` ${
+										index % 2 === 0
+											? 'bg-orange text-white'
+											: 'bg-green text-gray-900'
+									} px-1 rounded mr-2`}>
+									{role}
+								</span>
+							);
+						})}
+					</div>
 					<p className='mb-2 leading-7'>{description}</p>
 					<Link href={link}>
-						<a className='inline-block'>
+						<a className='inline-block' target='_blank'>
 							<div className='text-orange uppercase hover:text-green'>
 								Visit Site &gt;
 							</div>

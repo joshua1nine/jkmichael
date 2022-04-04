@@ -21,6 +21,27 @@ body {
 	background-size: 375px;
 }
 
+@media screen and (min-width: 768px) {
+	.page {
+		background-size: 450px;
+		background-position: top 0 right -25px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.page {
+		background-size: 600px;
+		background-position: top 0 right 0;
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	.page {
+		background-size: 600px;
+		background-position: top 0 right 0;
+	}
+}
+
 h2 {
 	@apply text-5xl font-bold;
 }
