@@ -6,17 +6,30 @@
 /* Your own custom component styles */
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
 	@apply text-white;
+	overflow-x: hidden;
+}
+
+.page {
+	background-image: url('/bg_logo.svg');
+	background-position: top 0 right -100px;
+	background-repeat: no-repeat;
+	background-size: 375px;
 }
 
 h2 {
-	@apply text-4xl font-bold;
+	@apply text-5xl font-bold;
 }
 
 .btn {
+	@apply border border-green py-3 px-4 rounded text-green font-bold mt-4 inline-block hover:text-orange hover:border-orange;
+}
+
+.btn-grad {
 	background: linear-gradient(93.9deg, #ec6b2d 0.3%, #4bd092 100%);
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -33,7 +46,7 @@ h2 {
 	text-decoration: none;
 	width: 180px;
 }
-.btn::before {
+.btn-grad::before {
 	content: '';
 	position: absolute;
 	z-index: -1;
@@ -52,13 +65,13 @@ h2 {
 	mask-composite: exclude;
 	-webkit-mask-repeat: no-repeat;
 }
-.btn:hover {
+.btn-grad:hover {
 	color: #0c1210;
 	-webkit-text-fill-color: #0c1210;
 	-webkit-background-clip: border-box;
 	background-clip: border-box;
 }
-.btn:hover::before {
+.btn-grad:hover::before {
 	-webkit-mask: none;
 }
 

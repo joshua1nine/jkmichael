@@ -5,7 +5,7 @@ type Props = {
 };
 
 const Page = ({ children }: Props) => {
-	return <div className='bg-gray-900'>{children}</div>;
+	return <div className='page bg-gray-900'>{children}</div>;
 };
 
 export default Page;

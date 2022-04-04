@@ -13,6 +13,7 @@ module.exports = {
 			green: '#4BD092',
 			gray: {
 				300: '#333D3A',
+				400: '#1A2320',
 				500: '#151C1A',
 				900: '#0C1210',
 			},
@@ -23,6 +24,9 @@ module.exports = {
 			fontFamily: {
 				sans: ['Poppins', ...defaultTheme.fontFamily.sans],
 				mono: ['PT Mono', ...defaultTheme.fontFamily.mono],
+			},
+			backgroundImage: {
+				bearded: "url('/bg_logo.svg')",
 			},
 		},
 	},

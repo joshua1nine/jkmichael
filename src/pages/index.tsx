@@ -3,34 +3,28 @@ import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import Header from '../components/Header';
 import Page from '../components/Page';
 import Card from '../components/Card';
+import Link from 'next/link';
+import { Hero } from '../components/Hero';
 
 const Home = () => {
 	return (
 		<Page>
 			<Header />
-			<div className='container p-4 min-h-screen'>
+			<div className='container p-4 min-h-screen relative'>
 				<main>
-					<img
-						src='webguy-logo.svg'
-						className='absolute opacity-5 top-0 -right-1/2 max-w-[1200px] w-[500px] h-auto'
-					/>
-					<section className='mt-8 mb-28'>
-						<h3 className='text-orange text-xl'>Hello, my name is</h3>
-						<h2 className='text-6xl font-bold'>Joshua Michael</h2>
-						<p className='py-2 mb-2'>
-							I am a <span className='text-orange'>full stack</span> developer.
-							I <span className='text-orange'>design</span> and develop
-							intuitive user experiences for the{' '}
-							<span className='text-orange'>web</span>.
-						</p>
-						<a className='btn' href='#work'>
-							Check out my work
-						</a>
-					</section>
-					<section id='about' className='mb-28'>
+					<Hero />
+					<section id='about' className='mb-36'>
 						<div>
-							<h2 className='mb-4'>Who am I?</h2>
-							<p className='mb-4'>
+							<h2 className='mb-8'>Who am I?</h2>
+							<div className='flex justify-center mb-4'>
+								<Image
+									className='rounded-lg'
+									width={450}
+									height={450}
+									src='/portrait.jpg'
+								/>
+							</div>
+							<p className='mb-6 leading-7 text-lg'>
 								Hey there! My name is Joshua Michael and I love the creative and
 								technical world of Web Development. I started developing like
 								many do with WordPress. Quickly I became intrigued with
@@ -40,7 +34,7 @@ const Home = () => {
 								into learning basic back-end development with Node.js and
 								Sanity.io.
 							</p>
-							<div className='flex flex-wrap mb-4'>
+							<div className='flex flex-wrap'>
 								<img
 									src='/icons/html_logo.svg'
 									alt=''
@@ -97,22 +91,15 @@ const Home = () => {
 								/>
 							</div>
 						</div>
-						<Image
-							className='rounded-lg'
-							width={450}
-							height={450}
-							src='/portrait.jpg'
-						/>
 					</section>
-					<section id='work'>
-						<h2 className='mb-4'>My Work</h2>
-						<div>
+					<section id='work' className='mb-36 scroll-mt-6'>
+						<h2 className='mb-12'>My Work</h2>
+						<div className='flex flex-col space-y-12'>
 							<Card
 								image='/balloon-fest_prod-card.jpg'
 								title='Firelight Balloon Fest'
-								description='Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id
-								dui posuere blandit. Vivamus suscipit tortor eget felis
-								porttitor volutpat. Donec rutrum congue leo eget malesuada.'
+								description='Festival info site that included a custom backend for vendor registration and payments portal.'
+								link='https://www.firelakeballoonfest.com/'
 								tech={[
 									{ icon: '/icons/react_logo.svg', title: 'React.js' },
 									{ icon: '/icons/next_logo.svg', title: 'Next.js' },
@@ -123,9 +110,8 @@ const Home = () => {
 							<Card
 								image='/firelakegolf_prod-card.jpg'
 								title='FireLake Golf'
-								description='Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id
-								dui posuere blandit. Vivamus suscipit tortor eget felis
-								porttitor volutpat. Donec rutrum congue leo eget malesuada.'
+								description='Golf course brochure site. Dynamic contact form allows users and to request event space or book a tournament.'
+								link='https://www.firelakegolf.com/'
 								tech={[
 									{ icon: '/icons/figma_logo.svg', title: 'Figma' },
 									{ icon: '/icons/react_logo.svg', title: 'React.js' },
@@ -136,9 +122,8 @@ const Home = () => {
 							<Card
 								image='/cpnhouseofhope_prod-card.jpg'
 								title='Firelight Balloon Fest'
-								description='Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id
-								dui posuere blandit. Vivamus suscipit tortor eget felis
-								porttitor volutpat. Donec rutrum congue leo eget malesuada.'
+								description='CPN House of Hope is a resource rich website that helps victims of abuse find programs and services in their area.'
+								link='https://www.cpnhouseofhope.com/'
 								tech={[
 									{ icon: '/icons/figma_logo.svg', title: 'Figma' },
 									{ icon: '/icons/react_logo.svg', title: 'React.js' },
@@ -148,19 +133,43 @@ const Home = () => {
 							/>
 						</div>
 					</section>
-					<section>
-						<h2>Contact</h2>
-						<div className='flex items-center' id='email'>
-							<FaEnvelope className='text-green' size={40} />{' '}
-							joshua.kale.michael@gmail.com
+					<section id='contact' className='mb-40'>
+						<h2 className='mb-12 text-center'>Contact</h2>
+						<div className='flex flex-col items-center'>
+							<Link href='mailto:joshua.kale.michael@gmail.com'>
+								<a target='_blank'>
+									<div
+										className='flex items-center mb-4 hover:text-orange'
+										id='email'>
+										<FaEnvelope className='text-green mr-2' size={40} />{' '}
+										joshua.kale.michael@gmail.com
+									</div>
+								</a>
+							</Link>
+							<Link href='https://github.com/joshua1nine'>
+								<a target='_blank'>
+									<div
+										className='flex items-center mb-6 hover:text-orange'
+										id='github'>
+										<FaGithub className='text-[#F5F5F5] mr-2' size={40} />{' '}
+										@joshua1nine
+									</div>
+								</a>
+							</Link>
+							<Link href='https://www.linkedin.com/in/jkmichael/'>
+								<a target='_blank'>
+									<div
+										className='flex items-center mb-12 hover:text-orange'
+										id='linkedin'>
+										<FaLinkedin className='text-[#0077B5] mr-2' size={40} />{' '}
+										/in/jkmichael
+									</div>
+								</a>
+							</Link>
+							<Link href='https://res.cloudinary.com/bearedweb/image/upload/v1649030743/Resume_-_Joshua_Michael_j0kmku.pdf'>
+								<a className='btn'>What a resume?</a>
+							</Link>
 						</div>
-						<div className='flex items-center' id='github'>
-							<FaGithub className='text-[#F5F5F5]' size={40} /> @joshua1nine
-						</div>
-						<div className='flex items-center' id='linkedin'>
-							<FaLinkedin className='text-[#0077B5]' size={40} /> /in/jkmichael
-						</div>
-						<a href='#'>What a resume?</a>
 					</section>
 				</main>
 			</div>
