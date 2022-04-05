@@ -38,7 +38,7 @@ export const Contact = () => {
 				</Link>
 				<Link href='https://res.cloudinary.com/bearedweb/image/upload/v1649030743/Resume_-_Joshua_Michael_j0kmku.pdf'>
 					<a target='_blank' className='btn'>
-						What a resume?
+						Want a resume?
 					</a>
 				</Link>
 			</div>
