@@ -11,7 +11,6 @@ type Props = {
 };
 
 const Page = ({ image, title, description, tech, link = '', roles }: Props) => {
-	console.log(roles[0]);
 	return (
 		<article className='bg-gray-400 rounded-md max-w-[375px]'>
 			<Image width={375} height={220} src={image} className='rounded-t-md' />
