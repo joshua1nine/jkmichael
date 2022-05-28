@@ -4,7 +4,7 @@ export const Hero = () => {
 			<h3 className='text-orange text-xl mb-1'>Hello, my name is</h3>
 			<h2 className='text-7xl font-bold mb-2'>Joshua Michael</h2>
 			<p className='py-2 mb-4 text-lg max-w-lg md:text-2xl'>
-				I am a <span className='text-orange'>full stack</span> developer. I{' '}
+				I am a <span className='text-orange'>front-end</span> web developer. I{' '}
 				<span className='text-orange'>design</span> and{' '}
 				<span className='text-orange'>develop</span> intuitive user experiences
 				for the web.
