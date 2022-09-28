@@ -36,7 +36,7 @@ export const Contact = () => {
 						</div>
 					</a>
 				</Link>
-				<Link href='https://res.cloudinary.com/bearedweb/image/upload/v1649030743/Resume_-_Joshua_Michael_j0kmku.pdf'>
+				<Link href='https://res.cloudinary.com/bearedweb/image/upload/v1649030743/Resume_-_Joshua_Michael_berwpi.pdf'>
 					<a target='_blank' className='btn'>
 						Want a resume?
 					</a>
