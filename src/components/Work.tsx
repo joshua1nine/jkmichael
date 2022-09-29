@@ -55,9 +55,9 @@ export const Work = () => {
                link='https://www.potawatomiheritage.com/'
                roles={['developer']}
                tech={[
+                  { icon: '/icons/figma_logo.svg', title: 'Figma' },
                   { icon: '/icons/wordpress-svgrepo-com.svg', title: 'WordPress'},
                   { icon: '/icons/php-logo.svg', title: 'PHP' },
-                  { icon: '/icons/figma_logo.svg', title: 'Figma' },
                ]}
             />
             <Card
@@ -67,9 +67,9 @@ export const Work = () => {
                link='https://www.potawatomi.org/'
                roles={['developer']}
                tech={[
+                  { icon: '/icons/figma_logo.svg', title: 'Figma' },
                   { icon: '/icons/wordpress-svgrepo-com.svg', title: 'WordPress'},
                   { icon: '/icons/php-logo.svg', title: 'PHP' },
-                  { icon: '/icons/figma_logo.svg', title: 'Figma' },
                ]}
             />
 			</div>

@@ -14,7 +14,7 @@ const Page = ({ image, title, description, tech, link = '', roles }: Props) => {
 	return (
 		<article className='bg-gray-400 rounded-md max-w-[375px]'>
 			<Image width={375} height={220} src={image} className='rounded-t-md' />
-			<div className='flex flex-col h-[275px]'>
+			<div className='flex flex-col'>
 				<div className='flex-1 p-4 pt-2'>
 					<Link href={link}>
 						<a target='_blank'>
@@ -38,7 +38,7 @@ const Page = ({ image, title, description, tech, link = '', roles }: Props) => {
 							);
 						})}
 					</div>
-					<p className='mb-2 leading-7'>{description}</p>
+					<p className='mb-6 leading-7'>{description}</p>
 					<Link href={link}>
 						<a className='inline-block' target='_blank'>
 							<div className='text-orange uppercase hover:text-green'>
