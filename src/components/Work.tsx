@@ -29,6 +29,7 @@ export const Work = () => {
 						{ icon: '/icons/react_logo.svg', title: 'React.js' },
 						{ icon: '/icons/next_logo.svg', title: 'Next.js' },
 						{ icon: '/icons/wordpress-svgrepo-com.svg', title: 'WordPress' },
+                  { icon: '/icons/php-logo.svg', title: 'PHP' },
 						{ icon: '/icons/vercel_logo.svg', title: 'Vercel' },
 					]}
 				/>
@@ -43,9 +44,34 @@ export const Work = () => {
 						{ icon: '/icons/react_logo.svg', title: 'React.js' },
 						{ icon: '/icons/next_logo.svg', title: 'Next.js' },
 						{ icon: '/icons/wordpress-svgrepo-com.svg', title: 'WordPress' },
+                  { icon: '/icons/php-logo.svg', title: 'PHP' },
 						{ icon: '/icons/vercel_logo.svg', title: 'Vercel' },
 					]}
 				/>
+            <Card
+               image='/cultural_prod-card.png'
+               title='Cultural Heritage Center'
+               description='The Citizen Potawatomi Cultural Heritage Center is both an award winning museum and website thanks to its fast custom built wordpress theme.'
+               link='https://www.potawatomiheritage.com/'
+               roles={['developer']}
+               tech={[
+                  { icon: '/icons/wordpress-svgrepo-com.svg', title: 'WordPress'},
+                  { icon: '/icons/php-logo.svg', title: 'PHP' },
+                  { icon: '/icons/figma_logo.svg', title: 'Figma' },
+               ]}
+            />
+            <Card
+               image='/potawatomi_prod-card.png'
+               title='Potawatomi'
+               description="Landing page for the Citizen Potawatomi Nation this custom WordPress theme this site informs everyone about CPN's enterpirses and services."
+               link='https://www.potawatomi.org/'
+               roles={['developer']}
+               tech={[
+                  { icon: '/icons/wordpress-svgrepo-com.svg', title: 'WordPress'},
+                  { icon: '/icons/php-logo.svg', title: 'PHP' },
+                  { icon: '/icons/figma_logo.svg', title: 'Figma' },
+               ]}
+            />
 			</div>
 		</section>
 	);

@@ -80,6 +80,18 @@ export const About = () => {
 								className='h-10 mr-5 mb-3'
 								title='vercel'
 							/>
+							<img
+								src='/icons/wordpress-svgrepo-com.svg'
+								alt=''
+								className='h-10 mr-5 mb-3'
+								title='vercel'
+							/>
+							<img
+								src='/icons/php-logo.svg'
+								alt=''
+								className='h-10 mr-5 mb-3'
+								title='vercel'
+							/>
 						</div>
 					</article>
 				</div>
