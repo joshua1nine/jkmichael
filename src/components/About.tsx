@@ -69,7 +69,8 @@ export const About = () => {
               ref={ref}
               variants={popInVariants}
               initial="hidden"
-              animate={mainControls}
+              animate="visible"
+              transition={{ delay: 0.8 }}
               className="flex justify-center lg:justify-start"
             >
               <p className="mb-12 leading-7 text-lg max-w-2xl">
