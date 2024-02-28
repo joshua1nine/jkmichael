@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:image" content="/MWS_OG_Image.jpg" />
         <meta
           property="og:description"
-          content="Crafting seamless user experiences for the digital world. Let's elevate your online presence!"
+          content="Crafting seamless user experiences for the digital world."
         />
         <link
           rel="apple-touch-icon"
