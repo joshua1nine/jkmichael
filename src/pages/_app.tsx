@@ -9,6 +9,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Michael Web Solutions</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:image" content="/MWS_OG_Image.jpg" />
+        <meta
+          property="og:description"
+          content="Crafting seamless user experiences for the digital world. Let's elevate your online presence!"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
