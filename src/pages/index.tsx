@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Page>
         <Header />
-        <div className="container mx-auto max-w-7xl p-3 lg:p-5 min-h-screen relative">
+        <div className="container mx-auto max-w-7xl p-3 md:p-8 min-h-screen relative">
           <main>
             <Hero />
             <About />

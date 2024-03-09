@@ -23,6 +23,16 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="mb-36 md:mb-56 lg:64">
+      <motion.h3
+        ref={ref}
+        variants={popInVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 0.5 }}
+        className="gradient-text animate-gradient text-xl text-center mb-4"
+      >
+        Let's work together
+      </motion.h3>
       <motion.h2
         ref={ref}
         variants={popInVariants}

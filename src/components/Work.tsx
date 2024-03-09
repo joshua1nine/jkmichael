@@ -19,6 +19,15 @@ export const Work = () => {
 
   return (
     <section id="work" className="mb-36 md:mb-56 lg:64 scroll-mt-6">
+      <motion.h3
+        ref={ref}
+        variants={popInVariants}
+        initial="hidden"
+        animate={mainControls}
+        className="gradient-text animate-gradient text-xl mb-4"
+      >
+        Check this out
+      </motion.h3>
       <motion.h2
         ref={ref}
         variants={popInVariants}

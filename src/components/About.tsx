@@ -27,6 +27,16 @@ export const About = () => {
   return (
     <section id="about" className="mb-36 md:mb-44 lg:64">
       <div>
+        <motion.h3
+          ref={ref}
+          variants={popInVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.5 }}
+          className="gradient-text animate-gradient text-xl mb-4"
+        >
+          Let me introduce myself
+        </motion.h3>
         <motion.h2
           ref={ref}
           variants={popInVariants}
