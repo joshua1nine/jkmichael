@@ -110,9 +110,12 @@ const Service = ({ selected }) => {
               className="space-y-4"
               key={tab}
             >
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold">{service.title}</h3>
-                <p className="text-lg">{service.description}</p>
+              <div className="flex gap-4 items-center">
+                <div className="h-60 w-72 bg-orange" />
+                <div className="flex-1 space-y-4">
+                  <h3 className="text-2xl font-bold">{service.title}</h3>
+                  <p className="text-lg">{service.description}</p>
+                </div>
               </div>
             </motion.div>
           ) : undefined;

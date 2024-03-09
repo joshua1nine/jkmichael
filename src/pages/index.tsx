@@ -4,7 +4,6 @@ import { Work } from "../components/Work";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { Contact } from "../components/Contact";
-import { Services } from "../components/Services";
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
             <Hero />
             <About />
             <Work />
-            <Services />
             <Contact />
           </main>
         </div>
