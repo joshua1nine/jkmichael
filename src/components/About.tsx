@@ -75,12 +75,12 @@ export const About = () => {
             >
               <p className="mb-12 leading-7 text-lg max-w-2xl">
                 Welcome to Michael Web Solutions! I'm Joshua, your go-to
-                full-stack freelance web developer, dedicated to crafting
-                seamless user experiences for the digital world. Let's transform
-                your business ideas into stunning, bespoke websites tailored to
-                your unique needs. From concept to launch, I'm here to elevate
-                your online presence and solve your software challenges. Let's
-                collaborate and bring your vision to life!
+                developer, dedicated to crafting seamless user experiences for
+                the digital world. Let's transform your business ideas into
+                stunning, custome websites tailored to your unique needs. From
+                concept to launch, I'm here to elevate your online presence and
+                solve your software challenges. Let's collaborate and bring your
+                vision to life!
               </p>
             </motion.div>
             <div className="flex flex-wrap justify-center lg:justify-start">

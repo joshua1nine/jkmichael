@@ -45,12 +45,15 @@ export const Hero = () => {
         initial="hidden"
         animate={mainControls}
         transition={{ delay: 0.2 }}
-        className="py-2 mb-8 text-lg max-w-lg md:text-2xl"
+        className="py-2 mb-8 text-xl max-w-4xl md:leading-10 md:text-3xl"
       >
-        I am a <span className="text-orange">full stack</span> web developer. I{" "}
-        <span className="text-orange">design</span> and{" "}
-        <span className="text-orange">develop</span> intuitive user experiences
-        for the web.
+        Elevate your business with{" "}
+        <span className="gradient-text animate-gradient">bespoke</span> websites
+        designed to{" "}
+        <span className="gradient-text animate-gradient">engage</span> and{" "}
+        <span className="gradient-text animate-gradient">convert</span>,
+        crafting pixel-perfect experiences that{" "}
+        <span className="gradient-text animate-gradient">drive success</span>.
       </motion.p>
       <motion.a
         variants={popInVariants}

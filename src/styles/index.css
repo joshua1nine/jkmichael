@@ -1,99 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
 
 /* Your own custom component styles */
 html {
-	scroll-behavior: smooth;
-	overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-	@apply text-white;
-	overflow-x: hidden;
+  @apply text-white;
+  overflow-x: hidden;
 }
 
 .page {
-	background-image: url('/bg_logo.svg');
-	background-position: top 0 right -100px;
-	background-repeat: no-repeat;
-	background-size: 375px;
+  background-image: url("/bg_logo.svg");
+  background-position: top 0 right -100px;
+  background-repeat: no-repeat;
+  background-size: 375px;
 }
 
 @media screen and (min-width: 768px) {
-	.page {
-		background-size: 450px;
-		background-position: top 0 right -25px;
-	}
+  .page {
+    background-size: 450px;
+    background-position: top 0 right -25px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-	.page {
-		background-size: 600px;
-		background-position: top 0 right 0;
-	}
+  .page {
+    background-size: 600px;
+    background-position: top 0 right 0;
+  }
 }
 
 @media screen and (min-width: 1536px) {
-	.page {
-		background-size: 600px;
-		background-position: top 0 right 0;
-	}
+  .page {
+    background-size: 600px;
+    background-position: top 0 right 0;
+  }
 }
 
 h2 {
-	@apply text-5xl font-bold;
+  @apply text-5xl font-bold;
 }
 
 .btn {
-	@apply border border-green py-3 px-4 rounded text-green font-bold mt-4 inline-block hover:text-orange hover:border-orange;
+  @apply border border-green py-3 px-4 rounded text-green font-bold mt-4 inline-block hover:text-orange hover:border-orange;
 }
 
 .btn-grad {
-	background: linear-gradient(93.9deg, #ec6b2d 0.3%, #4bd092 100%);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: transparent;
-	font-weight: bold;
-	border-radius: 2px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 42px;
-	position: relative;
-	z-index: 0;
-	text-decoration: none;
-	width: 180px;
+  background: linear-gradient(93.9deg, #ec6b2d 0.3%, #4bd092 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: bold;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  position: relative;
+  z-index: 0;
+  text-decoration: none;
+  width: 180px;
 }
 .btn-grad::before {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	border-radius: 6px;
-	border: 2px solid transparent;
-	border-radius: 6px;
-	background: inherit;
-	background-origin: border-box;
-	background-clip: border-box;
-	-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-	-webkit-mask-composite: destination-out;
-	mask-composite: exclude;
-	-webkit-mask-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: inherit;
+  background-origin: border-box;
+  background-clip: border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  -webkit-mask-repeat: no-repeat;
 }
 .btn-grad:hover {
-	color: #0c1210;
-	-webkit-text-fill-color: #0c1210;
-	-webkit-background-clip: border-box;
-	background-clip: border-box;
+  color: #0c1210;
+  -webkit-text-fill-color: #0c1210;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
 }
 .btn-grad:hover::before {
-	-webkit-mask: none;
+  -webkit-mask: none;
 }
 
-@import 'tailwindcss/utilities';
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    #ec6b2d,
+    #ee7b44,
+    #f08c5b,
+    #f29c73,
+    #ec6b2d,
+    #ee7b44,
+    #f08c5b,
+    #f29c73,
+    #f08c5b,
+    #ee7b44,
+    #ec6b2d
+  );
+  background-size: 800% 900%;
+  background-clip: text;
+  color: transparent;
+}
+
+@import "tailwindcss/utilities";
