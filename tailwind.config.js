@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./src/components/**/*.{ts,tsx,js,jsx}",
@@ -9,9 +10,17 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "#f2f2f2",
-      orange: "#EC6B2D",
+      orange: {
+        DEFAULT: "#EC6B2D",
+        600: "#ee7b44",
+        400: "#f08c5b",
+        200: "#f29c73",
+      },
       green: "#4BD092",
+
       gray: {
+        100: "#535F5C",
+        200: "#3F4B47",
         300: "#333D3A",
         400: "#1A2320",
         500: "#151C1A",
