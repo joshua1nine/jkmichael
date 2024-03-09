@@ -46,8 +46,8 @@ export const Hero = () => {
         <span className="gradient-text animate-gradient">bespoke</span> websites
         designed to{" "}
         <span className="gradient-text animate-gradient">engage</span> and{" "}
-        <span className="gradient-text animate-gradient">convert</span>,
-        crafting pixel-perfect experiences that{" "}
+        <span className="gradient-text animate-gradient">convert</span>, craft
+        pixel-perfect experiences that{" "}
         <span className="gradient-text animate-gradient">drive success</span>.
       </motion.p>
       <motion.button

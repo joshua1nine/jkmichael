@@ -45,7 +45,7 @@ const CardCarousel = () => {
     <section ref={ref}>
       <div className="relative overflow-hidden">
         {/* CARDS */}
-        <div className="mx-auto max-w-6xl">
+        <div className="max-w-6xl">
           <motion.div
             animate={{
               x: offset,
