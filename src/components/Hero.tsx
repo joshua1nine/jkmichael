@@ -1,19 +1,10 @@
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 export const Hero = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const mainControls = useAnimation();
   const router = useRouter();
-
-  useEffect(() => {
-    if (isInView) {
-      // Fire animation
-      mainControls.start("visible");
-    }
-  }, [isInView]);
 
   const popInVariants = {
     hidden: { opacity: 0, y: 75 },
@@ -25,21 +16,10 @@ export const Hero = () => {
       ref={ref}
       className="relative mt-8 mb-36 md:mt-16 md:mb-56 lg:mt-32 lg:mb-64 flex flex-col items-center"
     >
-      {/* <motion.h2 */}
-      {/*   variants={popInVariants} */}
-      {/*   initial="hidden" */}
-      {/*   animate={mainControls} */}
-      {/*   transition={{ delay: 0.1 }} */}
-      {/*   className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl flex flex-col gap-0 uppercase font-bold mb-2" */}
-      {/* > */}
-      {/*   <span>Michael</span> */}
-      {/*   <span className="text-orange">Web Solutions</span> */}
-      {/* </motion.h2> */}
-      <motion.p
+      <motion.h1
         variants={popInVariants}
         initial="hidden"
-        animate={mainControls}
-        transition={{ delay: 0.2 }}
+        animate="visible"
         className="py-2 mb-8 text-4xl font-black max-w-4xl md:leading-[120%] md:text-6xl text-center"
       >
         Elevate your business with{" "}
@@ -47,13 +27,12 @@ export const Hero = () => {
         designed to{" "}
         <span className="gradient-text animate-gradient">engage</span> and{" "}
         <span className="gradient-text animate-gradient">convert</span>.
-      </motion.p>
+      </motion.h1>
       <motion.button
         onClick={() => router.push("/#work")}
         variants={popInVariants}
         initial="hidden"
-        animate={mainControls}
-        transition={{ delay: 0.2 }}
+        animate="visible"
         className="text-white text-md md:text-lg w-52 font-medium px-4 py-3 rounded-md overflow-hidden relative transition-transform hover:scale-105 active:scale-95"
       >
         <span className="relative z-10">Check out my work</span>
@@ -66,7 +45,6 @@ export const Hero = () => {
             duration: 4,
             ease: "linear",
           }}
-          // className="bg-[linear-gradient(to_right,#ec6b2d,#F29C73)] absolute z-0 inset-0 w-[400%]"
           className="bg-[linear-gradient(to_right,#ec6b2d,#f08c5b)] absolute z-0 inset-0 w-[400%]"
         ></motion.div>
       </motion.button>

@@ -8,6 +8,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Michael Web Solutions</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Grow your business with a well designed and developed website."
+        />
         <meta property="og:image" content="/MWS_OG_Image.jpg" />
         <meta
           property="og:description"
