@@ -5,7 +5,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
 import Image from "next/image";
 
-const CARD_WIDTH = 375;
+const CARD_WIDTH = 342;
 const CARD_HEIGHT = 450;
 const MARGIN = 12;
 const CARD_SIZE = CARD_WIDTH + MARGIN;
@@ -65,7 +65,7 @@ const CardCarousel = () => {
             animate={{
               x: CAN_SHIFT_LEFT ? "0%" : "-100%",
             }}
-            className="absolute left-0 top-[60%] z-30 rounded-r-xl bg-white/30 p-3 pl-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pl-3"
+            className="absolute left-0 top-[20%] z-30 rounded-r-xl bg-white/30 p-3 pl-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pl-3"
             onClick={shiftLeft}
           >
             <FiChevronLeft />
@@ -75,7 +75,7 @@ const CardCarousel = () => {
             animate={{
               x: CAN_SHIFT_RIGHT ? "0%" : "100%",
             }}
-            className="absolute right-0 top-[60%] z-30 rounded-l-xl bg-white/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3"
+            className="absolute right-0 top-[20%] z-30 rounded-l-xl bg-white/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3"
             onClick={shiftRight}
           >
             <FiChevronRight />
