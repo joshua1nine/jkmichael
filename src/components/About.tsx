@@ -83,11 +83,11 @@ export const About = () => {
               transition={{ delay: 0.8 }}
               className="flex justify-center lg:justify-start"
             >
-              <p className="mb-12 leading-7 text-lg max-w-2xl">
+              <p className="mb-12 leading-8 text-xl max-w-2xl">
                 Welcome to Michael Web Solutions! I'm Joshua, your go-to
                 developer, dedicated to crafting seamless user experiences for
                 the digital world. Let's transform your business ideas into
-                stunning, custome websites tailored to your unique needs. From
+                stunning, custom websites tailored to your unique needs. From
                 concept to launch, I'm here to elevate your online presence and
                 solve your software challenges. Let's collaborate and bring your
                 vision to life!
