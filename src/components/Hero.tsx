@@ -1,5 +1,7 @@
+"use client";
+
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useRef } from "react";
 
 export const Hero = () => {

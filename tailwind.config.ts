@@ -1,10 +1,9 @@
+/** @type {import('tailwindcss').Config} */
+
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: [
-    "./src/components/**/*.{ts,tsx,js,jsx}",
-    "./src/pages/**/*.{ts,tsx,js,jsx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     colors: {
       transparent: "transparent",

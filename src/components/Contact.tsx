@@ -1,5 +1,6 @@
+"use client";
+
 import { motion, useAnimation, useInView } from "framer-motion";
-import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { FaEnvelope, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import ContactCard from "./ui/ContactCard";
@@ -28,7 +29,6 @@ export const Contact = () => {
         variants={popInVariants}
         initial="hidden"
         animate="visible"
-        transition={{ delay: 0.5 }}
         className="gradient-text animate-gradient text-xl text-center mb-4"
       >
         Let's work together
@@ -38,6 +38,7 @@ export const Contact = () => {
         variants={popInVariants}
         initial="hidden"
         animate={mainControls}
+        transition={{ delay: 0.25 }}
         className="mb-12 text-center"
       >
         Contact
@@ -66,11 +67,6 @@ export const Contact = () => {
           text="/in/jkmichael"
           delay={0.6}
         />
-        {/* <Link href="https://res.cloudinary.com/bearedweb/image/upload/v1649030743/Resume_-_Joshua_Michael_berwpi.pdf"> */}
-        {/*   <a target="_blank" className="btn"> */}
-        {/*     Want a resume? */}
-        {/*   </a> */}
-        {/* </Link> */}
       </div>
     </section>
   );

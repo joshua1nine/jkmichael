@@ -139,7 +139,7 @@ type CardProps = {
   title: string;
   description: string;
   link: string;
-  roles?: any[];
+  roles: string[];
 };
 
 const items: CardProps[] = [
