@@ -106,7 +106,7 @@ const Card = ({ image, title, description, roles, link }: CardProps) => {
         />
         <div className="flex flex-col">
           <div className="flex-1 p-6">
-            <h4 className="text-2xl font-bold mb-3">{title}</h4>
+            <h4 className="text-xl font-bold mb-3">{title}</h4>
             <div className="mb-3">
               {roles.map((role, index) => {
                 return (
