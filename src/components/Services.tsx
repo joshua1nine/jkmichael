@@ -33,17 +33,27 @@ export const Services = () => {
           animate={mainControls}
           className="gradient-text animate-gradient text-xl mb-4"
         >
-          Need help?
+          Invest in your business
         </motion.h3>
         <motion.h2
           ref={ref}
           variants={popInVariants}
           initial="hidden"
           animate={mainControls}
-          className="mb-12"
+          className="mb-6"
         >
-          Services
+          Elevate Your Brand
         </motion.h2>
+        <motion.p
+          ref={ref}
+          variants={popInVariants}
+          initial="hidden"
+          animate={mainControls}
+          className="mb-12 text-xl text-center max-w-2xl"
+        >
+          Investing in a well designed and developed website is crucial to
+          growing your business.
+        </motion.p>
       </div>
 
       <div className="max-w-lg: flex flex-col gap-3 sm:grid sm:grid-cols-2 lg:grid-cols-3 ">
