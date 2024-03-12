@@ -1,12 +1,6 @@
-import {
-  motion,
-  useAnimation,
-  useInView,
-  AnimatePresence,
-} from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 import ShimmerBorderCard from "./ui/ShimmerBorderCard";
-import { Handshake } from "lucide-react";
 
 export const Services = () => {
   const ref = useRef(null);
@@ -40,7 +34,7 @@ export const Services = () => {
           variants={popInVariants}
           initial="hidden"
           animate={mainControls}
-          className="mb-6"
+          className="mb-6 text-center"
         >
           Elevate Your Brand
         </motion.h2>
