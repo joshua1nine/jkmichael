@@ -6,11 +6,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Michael Web Solutions</title>
+        <title>
+          Michael Web Solutions -- Turn your website visitors into customers
+        </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
-          content="Grow your business with a well designed and developed website."
+          content="Grow your business with a website designed to impress. Michael Web Solutions specializes in crafting websites build to increase user engagment."
         />
         <meta property="og:image" content="/MWS_OG_Image.jpg" />
         <meta
