@@ -40,7 +40,7 @@ export const LeadForm = () => {
           Email
         </label>
         <input
-          className="flex h-10 w-full rounded-md text-gray-900 bg-white px-3 py-2 text-sm ring-offset-orange file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-100 focus:ring-orange focus:border-orange focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+          className="flex h-12 w-full rounded-md text-gray-900 bg-white px-3 py-2 text-sm ring-offset-orange file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-100 focus:ring-orange focus:border-orange focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
           type="email"
           id="email"
           name="email"
@@ -62,6 +62,14 @@ export const LeadForm = () => {
           required
         />
       </div>
+      <input
+        // className="hidden"
+        autoComplete="off"
+        type="text"
+        id="company"
+        name="company"
+        placeholder="Your company name here"
+      />
       <button
         className="py-2 px-6 rounded-md w-full bg-orange text-white"
         type="submit"

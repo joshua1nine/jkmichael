@@ -14,7 +14,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendLeadEmail = async (
   prevState: FormState,
-  fromData: FormData,
+  formData: FormData,
 ): Promise<FormState> => {
   const schema = z.object({
     name: z.string(),
@@ -23,9 +23,9 @@ export const sendLeadEmail = async (
   });
 
   const values = schema.parse({
-    name: fromData.get("name"),
-    email: fromData.get("email"),
-    message: fromData.get("message"),
+    name: formData.get("name"),
+    email: formData.get("email"),
+    message: formData.get("message"),
   });
 
   try {
