@@ -63,7 +63,7 @@ export const LeadForm = () => {
         />
       </div>
       <input
-        // className="hidden"
+        className="hidden"
         autoComplete="off"
         type="text"
         id="company"
