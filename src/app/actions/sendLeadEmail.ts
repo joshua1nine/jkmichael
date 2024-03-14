@@ -16,6 +16,15 @@ export const sendLeadEmail = async (
   prevState: FormState,
   formData: FormData,
 ): Promise<FormState> => {
+  const honeypot = formData.get("company");
+
+  if (honeypot !== "") {
+    return {
+      message: "Whoops! looks like your message didn't send. Please try again.",
+      errors: "You're not allowed to send this message.",
+    };
+  }
+
   const schema = z.object({
     name: z.string(),
     email: z.string().email(),

@@ -46,6 +46,16 @@ export const LeadForm = () => {
           name="email"
           required
         />
+        <label className="hidden" aria-hidden htmlFor="company">
+          Company
+        </label>
+        <input
+          className="hidden"
+          aria-hidden
+          id="company"
+          name="company"
+          type="text"
+        />
       </div>
       <div className="flex flex-col">
         <label
