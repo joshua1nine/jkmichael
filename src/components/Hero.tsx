@@ -16,28 +16,35 @@ export const Hero = () => {
   return (
     <section
       ref={ref}
-      className="relative mt-8 mb-36 md:mt-16 md:mb-56 lg:mt-32 lg:mb-64 flex flex-col items-center"
+      className="relative mt-8 mb-36 md:mt-16 md:mb-56 lg:mt-32 lg:mb-64 flex flex-col md:items-center"
     >
       <motion.h1
         variants={popInVariants}
         initial="hidden"
         animate="visible"
-        className="py-2 mb-8 text-4xl font-black max-w-4xl md:leading-[120%] md:text-6xl text-center"
+        className="py-2 mb-4 text-5xl font-black leading-[110%] md:leading-[120%] md:text-7xl lg:text-8xl md:text-center"
       >
-        Elevate your business with{" "}
-        <span className="gradient-text animate-gradient">bespoke</span> websites
-        designed to{" "}
-        <span className="gradient-text animate-gradient">engage</span> and{" "}
-        <span className="gradient-text animate-gradient">convert</span>.
+        Make your website{" "}
+        <span className="gradient-text animate-gradient block">
+          work for you!
+        </span>
       </motion.h1>
-      <motion.button
-        onClick={() => router.push("/#work")}
+      <motion.p
         variants={popInVariants}
         initial="hidden"
         animate="visible"
-        className="text-white text-md md:text-lg w-52 font-medium px-4 py-3 rounded-md overflow-hidden relative transition-transform hover:scale-105 active:scale-95"
+        className="text-xl mb-8 max-w-md md:max-w-xl text-gray-50 md:text-center md:text-3xl"
       >
-        <span className="relative z-10">Check out my work</span>
+        Elevate your business with websites that covert visitors into customers
+      </motion.p>
+      <motion.button
+        onClick={() => router.push("/#contact")}
+        variants={popInVariants}
+        initial="hidden"
+        animate="visible"
+        className="text-white text-lg w-52 font-bold px-4 py-3 rounded-md overflow-hidden relative transition-transform hover:scale-105 active:scale-95"
+      >
+        <span className="relative z-10">Let's Talk</span>
         <motion.div
           initial={{ left: 0 }}
           animate={{ left: "-300%" }}

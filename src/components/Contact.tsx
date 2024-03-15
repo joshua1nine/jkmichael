@@ -24,13 +24,13 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="mb-36 md:mb-56 lg:64">
+    <section id="contact" className="mb-36 md:mb-56 lg:64 scroll-mt-6">
       <div className="max-w-3xl mx-auto text-center space-y-6 mb-12">
         <motion.h3
           ref={ref}
           variants={popInVariants}
           initial="hidden"
-          animate="visible"
+          animate={mainControls}
           className="gradient-text animate-gradient text-xl"
         >
           Let's work together
@@ -45,14 +45,28 @@ export const Contact = () => {
         >
           Get Your Business Online
         </motion.h2>
-        <p className="text-xl mb-12">
+        <motion.p
+          ref={ref}
+          variants={popInVariants}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ delay: 0.5 }}
+          className="text-xl text-gray-50 mb-12"
+        >
           Tell me more about your vision to expand your business so that we can
           collaborate to make it a reality
-        </p>
+        </motion.p>
       </div>
-      <div className="max-w-xl mx-auto">
+      <motion.div
+        ref={ref}
+        variants={popInVariants}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ delay: 0.75 }}
+        className="max-w-xl mx-auto"
+      >
         <LeadForm />
-      </div>
+      </motion.div>
     </section>
   );
 };

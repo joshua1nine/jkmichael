@@ -21,7 +21,7 @@ export const LeadForm = () => {
   return (
     <form ref={ref} className="space-y-4" action={formAction}>
       <div className="flex flex-col">
-        <label className="mb-1 text-sm font-medium leading-none" htmlFor="name">
+        <label className="mb-2 font-medium leading-none" htmlFor="name">
           Name
         </label>
         <input
@@ -33,10 +33,7 @@ export const LeadForm = () => {
         />
       </div>
       <div className="flex flex-col">
-        <label
-          className="mb-1 text-sm font-medium leading-none"
-          htmlFor="email"
-        >
+        <label className="mb-2 font-medium leading-none" htmlFor="email">
           Email
         </label>
         <input
@@ -58,10 +55,7 @@ export const LeadForm = () => {
         />
       </div>
       <div className="flex flex-col">
-        <label
-          className="mb-1 text-sm font-medium leading-none"
-          htmlFor="message"
-        >
+        <label className="mb-2 font-medium leading-none" htmlFor="message">
           Tell me about your business and the problems you are trying to solve
         </label>
         <textarea
