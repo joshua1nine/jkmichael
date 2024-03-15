@@ -35,7 +35,7 @@ export const Hero = () => {
         animate="visible"
         className="text-xl mb-8 max-w-md md:max-w-xl text-gray-50 md:text-center md:text-3xl"
       >
-        Elevate your business with websites that covert visitors into customers
+        Elevate your business with websites that convert visitors into customers
       </motion.p>
       <motion.button
         onClick={() => router.push("/#contact")}
