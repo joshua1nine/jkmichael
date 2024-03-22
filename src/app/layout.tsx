@@ -5,11 +5,11 @@ import "../global.css";
 export const metadata: Metadata = {
   title: "Michael Web Solutions - Turn your website visitors into customers",
   description:
-    "Grow your business with a website designed to impress. Michael Web Solutions specializes in crafting websites build to increase user engagment.",
+    "Grow your business with a website designed to impress. Michael Web Solutions specializes in crafting websites build to increase user engagement.",
   openGraph: {
     title: "Michael Web Solutions - Turn your website visitors into customers",
     description:
-      "Grow your business with a website designed to impress. Michael Web Solutions specializes in crafting websites build to increase user engagment.",
+      "Grow your business with a website designed to impress. Michael Web Solutions specializes in crafting websites build to increase user engagement.",
     url: "https://www.jkmichael.com",
     siteName: "Michael Web Solutions",
     images: [
