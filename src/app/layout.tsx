@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Header from "../components/Header";
 import "../global.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Michael Web Solutions - Turn your website visitors into customers",
@@ -36,6 +38,8 @@ export default function RootLayout({
         <Header />
         <div className="container mx-auto max-w-7xl p-3 md:p-8 min-h-screen relative">
           {children}
+          <Analytics />
+          <SpeedInsights />
         </div>
       </body>
     </html>
