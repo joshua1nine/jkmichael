@@ -2,8 +2,6 @@
 
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
-import { FaEnvelope, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
-import ContactCard from "./ui/ContactCard";
 import { LeadForm } from "./ui/LeadForm";
 
 export const Contact = () => {
