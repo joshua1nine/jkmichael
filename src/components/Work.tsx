@@ -2,7 +2,7 @@
 
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
-import CardCarousel from "./ui/CardCarousel";
+import { ProjectCard } from "./ui/ProjectCard";
 export const Work = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -39,7 +39,36 @@ export const Work = () => {
       >
         My Work
       </motion.h2>
-      <CardCarousel />
+      <div className="flex flex-wrap gap-3 justify-center">
+        <ProjectCard
+          id={1}
+          image="/laborsync_prod-card.png"
+          title="Labor Sync"
+          description="Clean, intuitive, and feature rich SAAS web app."
+          link="/case/labor-sync"
+        />
+        <ProjectCard
+          id={1}
+          image="/firelakegolf_prod-card.jpg"
+          title="Firelake Golf"
+          description="A stunning Golf course marketing website."
+          link="/case/firelake-golf"
+        />
+        <ProjectCard
+          id={1}
+          image="/cpnhouseofhope_prod-card.jpg"
+          title="House of Hope"
+          description="A warm and inviting website helping women of domestic abuse."
+          link="/case/house-of-hope"
+        />
+        <ProjectCard
+          id={1}
+          image="/potawatomi_prod-card.png"
+          title="Potawatomi"
+          description="information dense government website designed to inform"
+          link="/case/potawatomi"
+        />
+      </div>
     </section>
   );
 };

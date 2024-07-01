@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Handshake } from "lucide-react";
+import { Handshake, Mail } from "lucide-react";
+import Link from "next/link";
 
 export const LetsTalk = () => {
   return (
@@ -18,12 +19,13 @@ export const LetsTalk = () => {
             Let's work together to make something great!
             <br /> Here's how you can react out to me!
           </p>
-          <a
+          <Link
             href="mailto:joshua@jkmichael.com"
-            className="text-center text-white bg-[linear-gradient(to_right,#ec6b2d,#f08c5b)] text-lg w-52 font-bold px-4 py-3 rounded-md overflow-hidden relative transition-transform hover:scale-105 active:scale-95"
+            className="text-center flex gap-2 items-center text-white bg-[linear-gradient(to_right,#ec6b2d,#f08c5b)] px-4 py-3 rounded-md overflow-hidden relative transition-transform hover:scale-105 active:scale-95"
           >
-            Let's Talk
-          </a>
+            <Mail />
+            <span>joshua@jkmichael.com</span>
+          </Link>
         </div>
 
         <motion.div

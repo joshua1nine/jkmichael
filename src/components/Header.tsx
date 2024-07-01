@@ -24,17 +24,19 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between p-3 xl:p-6">
-      <motion.img
-        variants={{
-          hidden: { opacity: 0, x: -100 },
-          visible: { opacity: 1, x: 0 },
-        }}
-        initial="hidden"
-        animate="visible"
-        src="/full-logo-white.svg"
-        alt="JKM Logo"
-        className="h-6 md:h-12"
-      />
+      <Link href="/">
+        <motion.img
+          variants={{
+            hidden: { opacity: 0, x: -100 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate="visible"
+          src="/full-logo-white.svg"
+          alt="JKM Logo"
+          className="h-6 md:h-12"
+        />
+      </Link>
       <div className="flex space-x-3 md:space-x-3">
         <motion.div variants={popInVariants} initial="hidden" animate="visible">
           <Link href="mailto:joshua@jkmichael.com" target="_blank">
