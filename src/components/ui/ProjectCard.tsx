@@ -12,7 +12,7 @@ type CardProps = {
 
 export const ProjectCard = ({ image, title, description, link }: CardProps) => {
   return (
-    <div className="flex flex-col border border-[#212726] space-y-4 relative max-w-[290px] p-3 shrink-0 bg-gray-400  rounded-2xl ">
+    <div className="flex flex-col border border-[#212726] space-y-4 relative w-full sm:max-w-96 lg:max-w-[290px] p-3 shrink-0 bg-gray-400  rounded-2xl ">
       <Image
         width={375}
         height={375}
