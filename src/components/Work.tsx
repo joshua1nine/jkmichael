@@ -65,7 +65,7 @@ export const Work = () => {
           id={1}
           image="/potawatomi_prod-card.png"
           title="Potawatomi"
-          description="information dense government website designed to inform"
+          description="Information dense government website designed to inform"
           link="/case/potawatomi"
         />
       </div>

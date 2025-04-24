@@ -46,7 +46,7 @@ export default function Page() {
             </div>
             <div>
               <Link
-                href="https://cpnhouseofhope.com/"
+                href="https://laborsync.com/"
                 target="_blank"
                 className="text-center text-white bg-[linear-gradient(to_right,#ec6b2d,#f08c5b)] text-sm w-52 font-bold px-4 py-2 rounded-md overflow-hidden relative transition-transform hover:scale-105 active:scale-95"
               >
